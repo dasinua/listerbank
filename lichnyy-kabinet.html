@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Личный кабинет</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" >
+	<meta name="keywords" content="" >
+	<link rel="icon" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+<header class="da-header">
+<!-- nav -->
+<section class="da-nav">
+	<div class="container">
+		<div class="da-nav__wrap">
+
+				<!-- logo -->
+				<a class="logo" href="index.html">
+					<img src="images/logo.png" alt="logo.png">
+				</a>
+				<!-- /logo -->
+				
+			<!-- right -->
+			<div class="da-nav__right">
+				<a href="index.html" class="da-btn da-nav__btn">Выйти</a>
+			</div>
+			<!-- /right -->
+		</div>
+	</div>
+</section>
+<!-- /nav -->
+</header>
+
+<!-- lichnyy-kabinet -->
+<div class="da-lichnyy-kabinet">
+	<div class="container">
+		<div class="da-lichnyy-kabinet__wrap">
+			<!-- tabs -->
+			<div class="da-tabs">
+					<div class="da-tabs__wrap">
+						<!-- tab -->
+						<div class="da-tabs__header">
+							<div class="da-tabs__tab">
+								<p class="da-tabs__link active">
+									Профиль
+								</p>
+								<p class="da-tabs__link">
+									История
+								</p>
+								<p class="da-tabs__link">
+									Кредиты
+								</p>
+								<p class="da-tabs__link">
+									Вклады
+								</p>
+								<p class="da-tabs__link">
+									Доставка
+								</p>
+							</div>
+						</div>
+						<!-- /tab -->
+						<div class="da-tabs__content-wrap">
+							<!-- content -->
+							<div class="da-tabs__content active">
+
+								<h4 class="da-lichnyy-kabinet__title">
+									Настройки профиля
+								</h4>
+								<!-- form -->
+								<form>
+									<div class="da-lichnyy-kabinet__form-wrap">
+										<!-- item -->
+										<div class="da-lichnyy-kabinet__item">
+											<p class="da-lichnyy-kabinet__text">
+												Фамилия 
+											</p>
+											<input type="text" name="familiya" class="da-lichnyy-kabinet__input" placeholder="Иванов" required>
+										</div>
+									    <!-- /item -->	
+									    <!-- item -->
+										<div class="da-lichnyy-kabinet__item">
+											<p class="da-lichnyy-kabinet__text">
+												Имя  
+											</p>
+											<input type="text" name="name" class="da-lichnyy-kabinet__input" placeholder="Иван" required>
+										</div>
+									    <!-- /item -->
+									    <!-- item -->
+										<div class="da-lichnyy-kabinet__item">
+											<p class="da-lichnyy-kabinet__text">
+												Отчество  
+											</p>
+											<input type="text" name="otchestvo" class="da-lichnyy-kabinet__input" placeholder="Иванович" required>
+										</div>
+									    <!-- /item -->
+										<!-- item -->
+										<div class="da-lichnyy-kabinet__item">
+											<p class="da-lichnyy-kabinet__text">
+												Как к вам обращаться? 
+											</p>
+											<input type="text" name="user" class="da-lichnyy-kabinet__input" placeholder="Сударь" required>
+										</div>
+									    <!-- /item -->
+									    <!-- item -->
+										<div class="da-lichnyy-kabinet__item">	
+											<p class="da-lichnyy-kabinet__text">
+												Пароль     
+											</p>
+											<input type="password" name="password" class="da-lichnyy-kabinet__input " placeholder="Пароль" required>
+										</div>
+									    <!-- /item -->
+										<!-- item -->
+										<div class="da-lichnyy-kabinet__item">	
+											<p class="da-lichnyy-kabinet__text">
+												Подтверджение пароля   
+											</p>
+											<input type="password" name="password2" class="da-lichnyy-kabinet__input " placeholder="Пароль" required>
+										</div>
+									    <!-- /item -->
+									</div>
+									<!-- /wrap -->
+									<div class="da-lichnyy-kabinet__btn-wrap">
+						    			<a href="#" class="da-btn da-lichnyy-kabinet__btn-reset">Сбросить</a>
+						    			<a href="#" class="da-btn da-lichnyy-kabinet__btn-save">Сохранить</a> 
+						    		</div>
+								</form>
+								<!-- /form -->
+							</div>
+							<!-- /content -->
+							<!-- content -->
+							<div class="da-tabs__content">
+								<h4 class="da-lichnyy-kabinet__title">
+									История платежей
+								</h4>
+								<div class="da-lichnyy-kabinet__history">
+									<!-- item -->
+									<div class="da-lichnyy-kabinet__history-item">
+										<p class="da-lichnyy-kabinet__history-text">
+											09 авг., пн <br>
+											<span class="da-lichnyy-kabinet__history-span">2019</span>
+										</p>
+										<div class="da-lichnyy-kabinet__history-list-wrap">
+											<p class="da-lichnyy-kabinet__history-list">
+												Перевод
+											</p>
+											<p class="da-lichnyy-kabinet__history-text2">
+												ИП «ЗЕЛЕНКА»
+											</p>
+										</div>
+										<p class="da-lichnyy-kabinet__history-sum">
+											+ 1 450 ₽
+										</p>
+									</div>
+									<!-- /item -->
+									<!-- item -->
+									<div class="da-lichnyy-kabinet__history-item">
+										<p class="da-lichnyy-kabinet__history-text">
+											11 авг., пн <br>
+											<span class="da-lichnyy-kabinet__history-span">2019</span>
+										</p>
+										<div class="da-lichnyy-kabinet__history-list-wrap">
+											<p class="da-lichnyy-kabinet__history-list">
+												Получен перевод
+											</p>
+											<p class="da-lichnyy-kabinet__history-text2">
+												Петрова А.Г
+											</p>
+										</div>
+										<p class="da-lichnyy-kabinet__history-sum">
+											+ 10 000 ₽
+										</p>
+									</div>
+									<!-- /item -->
+									<!-- item -->
+									<div class="da-lichnyy-kabinet__history-item">
+										<p class="da-lichnyy-kabinet__history-text">
+											13 авг., пн <br>
+											<span class="da-lichnyy-kabinet__history-span">2019</span>
+										</p>
+										<div class="da-lichnyy-kabinet__history-list-wrap">
+											<p class="da-lichnyy-kabinet__history-list">
+												Получен кредит
+											</p>
+											<p class="da-lichnyy-kabinet__history-text2">
+												ListerBank
+											</p>
+										</div>
+										<p class="da-lichnyy-kabinet__history-sum">
+											+ 12 550 ₽
+										</p>
+									</div>
+									<!-- /item -->
+									<!-- item -->
+									<div class="da-lichnyy-kabinet__history-item">
+										<p class="da-lichnyy-kabinet__history-text">
+											13 авг., пн <br>
+											<span class="da-lichnyy-kabinet__history-span">2019</span>
+										</p>
+										<div class="da-lichnyy-kabinet__history-list-wrap">
+											<p class="da-lichnyy-kabinet__history-list">
+												Получен кредит
+											</p>
+											<p class="da-lichnyy-kabinet__history-text2">
+												ListerBank
+											</p>
+										</div>
+										<p class="da-lichnyy-kabinet__history-sum">
+											+ 12 550 ₽
+										</p>
+									</div>
+									<!-- /item -->
+								</div>
+								<!-- /kabinet__history -->
+							</div>
+							<!-- /content -->
+							<!-- content -->
+							<div class="da-tabs__content">
+								<div class="da-lichnyy-kabinet__dogovor">
+									<h4 class="da-lichnyy-kabinet__title">
+										Кредитная история
+									</h4>
+									<img src="images/money_icon.png" alt="money_icon.png">
+									<h4 class="da-lichnyy-kabinet__subtitle">
+										У вас нет ни одного 
+										активного займа
+									</h4>
+								</div>
+							</div>
+							<!-- /content -->
+							<!-- content -->
+							<div class="da-tabs__content">
+								<div class="da-lichnyy-kabinet__dogovor">
+									<h4 class="da-lichnyy-kabinet__title">
+										История вкладов
+									</h4>
+									<img src="images/money_icon.png" alt="money_icon.png">
+									<h4 class="da-lichnyy-kabinet__subtitle">
+										У вас нет ни одного 
+										активного вклада
+									</h4>
+								</div>
+							</div>
+							<!-- /content -->
+							<!-- content -->
+							<div class="da-tabs__content">
+								<div class="da-lichnyy-kabinet__dogovor">
+									<h4 class="da-lichnyy-kabinet__title">
+										Доставка кредитного договора
+									</h4>
+									<img src="images/shipped_icon.png" alt="shipped_icon.png">
+									<p class="da-lichnyy-kabinet__subtitle2">
+										«Курьер в пути»
+									</p>
+									<button class="da-btn da-lichnyy-kabinet__btn link-konsultatsiya">Консультация</button>
+								</div>
+							</div>
+							<!-- /content -->
+						</div>
+					</div>
+			</div>
+			<!-- /tabs -->
+		</div>
+	</div>
+</div>
+<!-- /lichnyy-kabinet -->
+
+<footer class="da-footer">
+	<div class="container">
+		<p class="da-footer__title">
+			Copyright 2019 © 2013–2019, АО КБ «Listen bank» | Официальный сайт «Listen bank»
+		</p>
+	</div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/slick.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Вход в личный кабинет -->
+<div id="modalKabinet" class="da-modal da-modal-kabinet">
+		<h4 class="da-modal__title">
+			Личный кабинет
+		</h4>
+		<p class="da-modal__text-small">
+			Только зарегистрированные 
+			пользователи
+		</p>
+		<form action="lichnyy-kabinet.html">
+			<input type="text" name="login" class="da-modal__input"  placeholder="Логин" required>
+			<input type="password" name="password" class="da-modal__input"  placeholder="Пароль" required>
+			<button type="submit" class="da-btn da-modal__btn">Оставить заявку</button>
+		</form>
+		<a class="da-modal__link" href="#">
+			Забыли пароль?
+		</a>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вход в личный кабинет -->
+
+<!-- Консультация -->
+<div id="modalKonsultatsiya" class="da-modal da-modal-konsultatsiya">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKonsultatsiya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-4"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-4"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-4 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-4"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Консультация">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-4">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Консультация -->
+
+<!-- Кредиты -->
+<!-- Кредит «Премьер» -->
+<div id="modalKreditPremyer" class="da-modal da-modal-kredity">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formlKreditPremyer">
+			<input type="text" name="name" class="da-modal__input da-modal__input-1"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-1"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-1 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-1"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредит Премьер">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-1">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредит «Премьер» -->
+
+<!-- Кредит «Пора действовать» -->
+<div id="modalKreditPoraDeystvovat" class="da-modal da-modal-kredity">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKreditPoraDeystvovat">
+			<input type="text" name="name" class="da-modal__input da-modal__input-2"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-2"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-2 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-2"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредит Пора действовать">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-2">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредит «Пора действовать» -->
+
+<!-- Кредит «Семейный» -->
+<div id="modalKreditSemeyny" class="da-modal da-modal-kredity">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKreditSemeyny">
+			<input type="text" name="name" class="da-modal__input da-modal__input-3"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-3"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-3 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-3"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредит Семейный">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-3">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредит «Семейный» -->
+<!-- /Кредиты -->
+
+<!-- Вклады -->
+<!-- Вклад «Максимальный доход 7.8%» -->
+<div id="modalVkladMaksimalnyDokhod" class="da-modal da-modal-vklady">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formVkladMaksimalnyDokhod">
+			<input type="text" name="name" class="da-modal__input da-modal__input-1"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-1"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-1 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-1"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Вклад Максимальный доход 7.8%">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-1">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вклад «Максимальный доход 7.8%» -->
+
+<!-- Вклад «Инвестиционный»  -->
+<div id="modalVkladInvestitsionny" class="da-modal da-modal-vklady">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formVkladInvestitsionny">
+			<input type="text" name="name" class="da-modal__input da-modal__input-2"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-2"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-2 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-2"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Вклад Инвестиционный">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-2">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вклад «Инвестиционный»  -->
+
+<!-- Вклад «Капитальный» -->
+<div id="modalVkladKapitalny" class="da-modal da-modal-vklady">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formVkladKapitalny">
+			<input type="text" name="name" class="da-modal__input da-modal__input-3"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-3"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-3 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-3"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Вклад Капитальный">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-3">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вклад «Капитальный» -->
+<!-- /Вклады -->
+
+
+<!-- Банковские карты -->
+<!-- Капитальная карта -->
+<div id="modalKartaKapitalnaya" class="da-modal da-modal-kreditnyye-karty">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKartaKapitalnaya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-2"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-2"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-2 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-2"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Капитальная карта">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-2">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Капитальная карта -->
+
+<!-- Кредитная карта  -->
+<div id="modalKartaKreditnaya" class="da-modal da-modal-kreditnyye-karty">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKartaKreditnaya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-3"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-3"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-3 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-3"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредитная карта">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-3">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредитная карта  -->
+
+<!-- Пенсионная карта -->
+<div id="modalKartaPensionnaya" class="da-modal da-modal-kreditnyye-karty">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKartaPensionnaya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-1"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-1"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-1 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-1"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Пенсионная карта">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-1">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Пенсионная карта -->
+<!-- /Банковские карты -->
+
+<!-- Страхование «Оптима» -->
+<div id="modalStrakhovaniye" class="da-modal da-modal-strakhovaniye">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formStrakhovaniye">
+			<input type="text" name="name" class="da-modal__input da-modal__input-4"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-4"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-4 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-4"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Страхование Оптима">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-4">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Страхование «Оптима» -->
+
+<!-- Спасибо -->
+<div id="thanks" class="da-modal da-modal__thanks">
+	<h3 class="da-modal__title">Спасибо за заявку!</h3>
+	<p class="da-modal__text-thanks">
+		Мы перезвоним Вам в течение 30 минут
+	</p>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<div class="overlay"></div>
+<!-- /Спасибо -->
+
+</body>
+</html>

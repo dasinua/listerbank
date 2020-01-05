@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>ListerBank</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="" >
+	<meta name="keywords" content="" >
+	<link rel="icon" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	
+</head>
+<body>
+
+<header class="da-header">
+<!-- nav -->
+<section class="da-nav">
+	<div class="container">
+		<div class="da-nav__wrap">
+
+				<!-- logo -->
+				<a class="logo" href="index.html">
+					<img src="images/logo.png" alt="logo.png">
+				</a>
+				<!-- /logo -->
+				
+				<!-- toggle -->
+				<div class="da-nav__toggle">
+					<input type="checkbox" id="checkbox" class="checkbox visuallyHidden">
+				    <label for="checkbox">
+				        <div class="hamburger hamburger1">
+				            <span class="bar bar1"></span>
+				            <span class="bar bar2"></span>
+				            <span class="bar bar3"></span>
+				            <span class="bar bar4"></span>
+				        </div>
+				    </label>
+				</div>
+				<!-- /toggle -->
+				<!-- menu -->
+			    <div class="da-menu" id="daMenu">
+			    	<ul class="da-menu__list">
+			    		<li class="da-menu__item"><a href="kredity.html">Кредиты</a></li>
+			    		<li class="da-menu__item"><a href="vklady.html">Вклады</a></li>
+			    		<li class="da-menu__item"><a href="karty.html">Карты</a></li>
+			    		<li class="da-menu__item"><a id="menuListin" href="#listin">Маркет</a></li>
+			    		<li class="da-menu__item"><a id="menuKontakty" href="#kontakty">Контакты</a></li>
+			    	</ul>
+			    </div>
+				<!-- /menu -->
+
+			<!-- right -->
+			<div class="da-nav__right">
+				<button class="da-btn da-nav__btn lichnyy-kabinet">Войти</button>
+			</div>
+			<!-- /right -->
+		</div>
+	</div>
+</section>
+<!-- /nav -->
+</header>
+
+<!-- banner -->
+<div class="da-banner">
+	<div class="banner-sliders">
+			
+			<!-- item1 -->
+		    <div class="da-banner__item da-banner__item-1">
+
+				<!-- wrap-text -->
+		    	<div class="da-banner__wrap-text">
+		    		<h2 class="da-banner__title">
+		    			Кредит «Пора действовать»
+		    		</h2>
+		    		<p class="da-banner__subtitle">
+		    			Под залог недвижимости от 11,0%, 
+						до 5 млн рублей, до 20 лет
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-1">
+		    			Срок <span class="da-banner__list-regular">до 20 лет</span>
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-1">
+		    			Ставка <span class="da-banner__list-regular">13,0% годовых</span>
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-1">
+		    			Мин. сумма вклада <span class="da-banner__list-regular">от 10 000₽</span>
+		    		</p>
+		    		<div class="da-banner__btn-wrap">
+		    			<button class="da-btn da-banner__btn da-banner__btn-1 link-kredit-pora-deystvovat">Оставить заявку</button>
+		    			<a href="kredit-pora-deystvovat.html" class="da-btn da-banner__btn-link da-banner__btn-link-1">Подробнее</a> 
+		    		</div>
+		    	</div>
+				<!-- /wrap-text -->
+		    </div>
+		   <!-- /item1 -->
+
+			<!-- item2 -->
+		    <div class="da-banner__item da-banner__item-2">
+
+				<!-- wrap-text -->
+		    	<div class="da-banner__wrap-text">
+		    		<h2 class="da-banner__title">
+		    			Вклад «Максимальный 
+						доход 7.8%»
+		    		</h2>
+		    		<p class="da-banner__subtitle">
+		    			Специальное предложение!
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-2">
+		    			Срок <span class="da-banner__list-regular">до 370 дней</span>
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-2">
+		    			Ставка <span class="da-banner__list-regular">до 9% годовых</span>
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-2">
+		    			Мин. сумма вклада <span class="da-banner__list-regular">от 50 000₽</span>
+		    		</p>
+		    		<div class="da-banner__btn-wrap">
+		    			<button class="da-btn da-banner__btn da-banner__btn-2 link-vklad-maksimalny-dokhod">Оставить заявку</button>
+		    			<a href="vklad-maksimalny-dokhod.html" class="da-btn da-banner__btn-link da-banner__btn-link-2">Подробнее</a> 
+		    		</div>
+		    	</div>
+				<!-- /wrap-text -->
+		    </div>
+		   <!-- /item2 -->
+
+		   <!-- item3 -->
+		    <div class="da-banner__item da-banner__item-3">
+
+				<!-- wrap-text -->
+		    	<div class="da-banner__wrap-text">
+		    		<h2 class="da-banner__title">
+		    			Страхование «Оптима»
+		    		</h2>
+		    		<p class="da-banner__subtitle">
+		    			- Это Ваша защита и уверенность в завтрашнем 
+						дне. Программа страхования позволит получить 
+						финансовую поддержку в трудную минуту 
+						и компенсировать затраты, необходимые 
+						на лечение вследствие несчастного случая.
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-3">
+		    			Действует <span class="da-banner__list-regular">по всему миру</span>
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-3">
+		    			Простое <span class="da-banner__list-regular">подключение по телефону</span>
+		    		</p>
+		    		<p class="da-banner__list da-banner__list-3">
+		    			Предоставляет <span class="da-banner__list-regular">защиту</span>
+		    		</p>
+		    		<div class="da-banner__btn-wrap">
+		    			<button class="da-btn da-banner__btn da-banner__btn-3 link-strakhovaniye">Оставить заявку</button>
+		    			<a href="strakhovaniye.html" class="da-btn da-banner__btn-link da-banner__btn-link-3">Подробнее</a> 
+		    		</div>
+		    	</div>
+				<!-- /wrap-text -->
+		    </div>
+		   <!-- /item3 -->
+
+	</div>
+</div>
+<!-- /banner -->
+
+<!-- kursy-valyut -->
+<div class="da-kursy-valyut">
+	<div class="container">
+		<div class="da-kursy-valyut__wrap">
+			<!-- item -->
+			<div class="da-kursy-valyut__item-left">
+				<h4 class="da-kursy-valyut__title">
+					Курсы валют
+				</h4>
+				<p class="da-kursy-valyut__text">
+					На 10 Августа 2019, 08:00
+				</p>
+			</div>
+			<!-- /item -->
+
+			<!-- item -->
+			<div class="da-kursy-valyut__item-center">
+				<!-- item -->
+				<div class="da-kursy-valyut__currency-item">
+					<h4 class="da-kursy-valyut__currency">
+						USD
+					</h4>
+					<p class="da-kursy-valyut__currency">
+						<span class="da-kursy-valyut__currency-green-1">Покупка</span>
+						65.10
+					</p>
+					<p class="da-kursy-valyut__currency">
+						<span class="da-kursy-valyut__currency-red-1">Продажа</span>
+						65.08
+					</p>
+				</div>
+				<!-- /item -->
+				<!-- item -->
+				<div class="da-kursy-valyut__currency-item">
+					<h4 class="da-kursy-valyut__currency">
+						EUR
+					</h4>
+					<p class="da-kursy-valyut__currency">
+						73.15
+					</p>
+					<p class="da-kursy-valyut__currency">
+						72.85
+					</p>
+				</div>
+				<!-- /item -->
+			</div>
+			<!-- /item -->
+
+			<!-- item -->
+			<div class="da-kursy-valyut__item-center">
+				<!-- item -->
+				<div class="da-kursy-valyut__currency-item">
+					<h4 class="da-kursy-valyut__currency">
+						GBP
+					</h4>
+					<p class="da-kursy-valyut__currency">
+						<span class="da-kursy-valyut__currency-green-2">Покупка</span>
+						75.90
+					</p>
+					<p class="da-kursy-valyut__currency">
+						<span class="da-kursy-valyut__currency-red-2">Продажа</span>
+						81.90
+					</p>
+				</div>
+				<!-- /item -->
+				<!-- item -->
+				<div class="da-kursy-valyut__currency-item">
+					<h4 class="da-kursy-valyut__currency">
+						UAH
+					</h4>
+					<p class="da-kursy-valyut__currency">
+						25.47
+					</p>
+					<p class="da-kursy-valyut__currency">
+						25.57
+					</p>
+				</div>
+				<!-- /item -->
+			</div>
+			<!-- /item -->
+
+			<!-- item -->
+			<div class="da-kursy-valyut__item-right">
+				<a class="da-kursy-valyut__link" href="#">
+					Больше валют
+				</a>
+				<img src="images/left-arrow.png" alt="left-arrow.png">
+			</div>
+			<!-- /item -->
+		</div>
+		<!-- /wrap -->
+	</div>
+	<!-- /container -->
+</div>
+<!-- /kursy-valyut -->
+
+<!-- blocks -->
+<div class="da-blocks">
+	<div class="container">
+		<div class="da-blocks__wrap">
+			<!-- item -->
+			<div class="da-blocks__item">
+				<h4 class="da-blocks__title">
+					Вклады
+				</h4>
+				<p class="da-blocks__subtitle">
+					Зарабатывайте на своих 
+					вкусных процентах!
+				</p>
+				<p class="da-blocks__list da-blocks__list-1">
+		    		От <span class="da-blocks__list-bold">8,6%</span>
+		    	</p>
+		    	<a href="vklady.html" class="da-btn da-blocks__btn da-blocks__btn-1 ">Узнать подробнее</a>
+			</div>
+			<!-- /item -->
+			<!-- item -->
+			<div class="da-blocks__item">
+				<h4 class="da-blocks__title">
+					Карты
+				</h4>
+				<p class="da-blocks__subtitle">
+					Для ежедневных 
+					платежей и услуг
+				</p>
+				<p class="da-blocks__list da-blocks__list-2">
+		    		От <span class="da-blocks__list-bold">7,0%</span>
+		    	</p>
+		    	<a href="karty.html" class="da-btn da-blocks__btn da-blocks__btn-2 ">Узнать подробнее</a>
+			</div>
+			<!-- /item -->
+			<!-- item -->
+			<div class="da-blocks__item">
+				<h4 class="da-blocks__title">
+					Страхование
+				</h4>
+				<p class="da-blocks__subtitle">
+					Для непредвиденных
+					ситуаций
+				</p>
+				<p class="da-blocks__list da-blocks__list-3">
+		    		От <span class="da-blocks__list-bold">2000₽</span>
+		    	</p>
+		    	<a href="strakhovaniye.html" class="da-btn da-blocks__btn da-blocks__btn-3 ">Узнать подробнее</a>
+			</div>
+			<!-- /item -->
+		</div>
+	</div>
+</div>
+<!-- /blocks -->
+
+<!-- blocks2 -->
+<div class="da-blocks2">
+	<div class="container">
+		<div class="da-blocks2__wrap">
+			<!-- item -->
+			<div class="da-blocks2__item da-blocks2__item-1">
+				<h4 class="da-blocks2__title">
+					Кредит
+				</h4>
+				<p class="da-blocks2__subtitle">
+					Низкие проценты
+					по кредитным ставкам
+				</p>
+				<p class="da-blocks2__list da-blocks2__list-1">
+		    		От <span class="da-blocks2__list-bold">22,5%</span>
+		    	</p>
+		    	<a href="kredity.html" class="da-btn da-blocks2__btn da-blocks2__btn-1 ">Узнать подробнее</a>
+			</div>
+			<!-- /item -->
+			<!-- item -->
+			<div class="da-blocks2__item">
+				<h4 class="da-blocks2__title">
+					С карты на карту
+				</h4>
+				<p class="da-blocks2__subtitle-2">
+					Любая карта, любого банка
+					Достаточно знать номер карты.
+				</p>
+				<p class="da-blocks2__list da-blocks2__list-2">
+		    		От <span class="da-blocks2__list-bold">500₽</span>
+		    	</p>
+		    	<form action="#">
+		    		<div class="da-blocks2__form-wrap">
+		    			<input type="text" class="da-blocks2__input"  placeholder="10 000 рублей">
+		    			<button class="da-btn da-blocks2__btn da-blocks2__btn-2 ">Отправить</button>
+		    		</div>
+		    	</form>
+		    	
+			</div>
+			<!-- /item -->
+		</div>
+	</div>
+</div>
+<!-- /blocks2 -->
+
+<!-- listin -->
+<div class="da-listin" id="listin">
+	<div class="container">
+		<h3 class="da-listin__title-1">
+			Listin Маркет
+		</h3>
+		<div class="da-listin__wrap">
+			<!-- item -->
+			<div class="da-listin__item">
+				<h5 class="da-listin__title">
+					Еда и продукты
+				</h5>
+				<p class="da-listin__subtitle">
+					Найдите ближайшие 
+					рестораны с доставкой
+				</p>
+				<p class="da-listin__link">
+		    		Ссылка https://5ka.ru/
+		    	</p>
+		    	<a href="https://5ka.ru/" target="_blank" class="da-btn da-listin__btn da-listin__btn-1 ">Подробнее</a>
+			</div>
+			<!-- /item -->
+			<!-- item -->
+			<div class="da-listin__item">
+				<h5 class="da-listin__title">
+					Путешествия
+				</h5>
+				<p class="da-listin__subtitle">
+					Получите бонусы 
+					за покупки билетов
+				</p>
+				<p class="da-listin__link">
+		    		https://www.booking.com
+		    	</p>
+		    	<a href="https://www.booking.com" target="_blank" class="da-btn da-listin__btn da-listin__btn-2 ">Подробнее</a>
+			</div>
+			<!-- /item -->
+			<!-- item -->
+			<div class="da-listin__item">
+				<h5 class="da-listin__title">
+					Здоровье
+				</h5>
+				<p class="da-listin__subtitle">
+					Вызов врача на дом 
+					для взрослых и детей
+				</p>
+				<p class="da-listin__link">
+		    		https://docplus.ru/vrach_na_dom/
+		    	</p>
+		    	<a href="https://docplus.ru/vrach_na_dom/" target="_blank" class="da-btn da-listin__btn da-listin__btn-3 ">Подробнее</a>
+			</div>
+			<!-- /item -->
+		</div>
+	</div>
+</div>
+<!-- /listin -->
+
+<!-- listin2 -->
+<div class="da-listin2">
+	<div class="container">
+		<div class="da-listin2__wrap">
+			<!-- item-left -->
+			<div class="da-listin2__item da-listin2__item-left">
+				<h5 class="da-listin2__title">
+					Квартиры и гостиницы
+				</h5>
+				<p class="da-listin2__subtitle">
+					Бронирование гостиницы и дома, 
+					покупайтеквартиры, мы поможем 
+					вам с переездом.
+				</p>
+				<p class="da-listin2__link">
+		    		https://ru.hotels.com
+		    	</p>
+		    	<a href="https://ru.hotels.com" target="_blank" class="da-btn da-listin2__btn da-listin2__btn-1 ">Подробнее</a>
+			</div>
+			<!-- /item-left -->
+			<!-- item-right -->
+			<div class="da-listin2__item da-listin2__item-right">
+				<h5 class="da-listin2__title">
+					Новости банка
+				</h5>
+				<!-- novosti -->
+				<div class="da-novosti">
+					<div class="novosti-sliders">
+
+						<!-- item -->
+						<div class="da-novosti__item">
+							<div class="da-novosti__item-wrap">
+								<div class="da-novosti__item-col">
+									<p class="da-novosti__text">
+										Listen Банк смогут получать 
+										дополнительный кэшбэк 
+										до 20% за покупки
+									</p>
+									<p class="da-novosti__date">
+										17.07.2019
+									</p>
+								</div>
+								<div class="da-novosti__item-col">
+									<p class="da-novosti__text">
+										Listen банк меняет размер комиссии 
+										по банковским картам и увеличивает 
+										лимит снятия наличных
+									</p>
+									<p class="da-novosti__date">
+										11.07.2019
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+						<!-- item -->
+						<div class="da-novosti__item">
+							<div class="da-novosti__item-wrap">
+								<div class="da-novosti__item-col">
+									<p class="da-novosti__text">
+										Listen Банк смогут получать 
+										дополнительный кэшбэк 
+										до 20% за покупки
+									</p>
+									<p class="da-novosti__date">
+										17.07.2019
+									</p>
+								</div>
+								<div class="da-novosti__item-col">
+									<p class="da-novosti__text">
+										Listen банк меняет размер комиссии 
+										по банковским картам и увеличивает 
+										лимит снятия наличных
+									</p>
+									<p class="da-novosti__date">
+										11.07.2019
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+						<!-- item -->
+						<div class="da-novosti__item">
+							<div class="da-novosti__item-wrap">
+								<div class="da-novosti__item-col">
+									<p class="da-novosti__text">
+										Listen Банк смогут получать 
+										дополнительный кэшбэк 
+										до 20% за покупки
+									</p>
+									<p class="da-novosti__date">
+										17.07.2019
+									</p>
+								</div>
+								<div class="da-novosti__item-col">
+									<p class="da-novosti__text">
+										Listen банк меняет размер комиссии 
+										по банковским картам и увеличивает 
+										лимит снятия наличных
+									</p>
+									<p class="da-novosti__date">
+										11.07.2019
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- /item -->
+					</div>
+				</div>
+				<!-- /novosti -->
+			</div>
+			<!-- /item-right -->
+		</div>
+	</div>
+</div>
+<!-- /listin2 -->
+
+<!-- reviews -->
+<div class="container">
+	<div class="da-reviews">
+		<h4 class="da-reviews__title">
+			Отзывы наших клиентов
+		</h4>
+		<div class="da-reviews__wrap">
+			<div class="reviews-sliders">
+				<!-- item1 -->
+				<div class="da-reviews__item">
+					<div class="da-reviews__user">
+						<img class="da-reviews__img" src="images/reviews/reviews-1.jpg" alt="reviews-1.jpg">
+						<p class="da-reviews__subtitle">
+							Анастасия Копалиани
+							<span class="da-reviews__subtitle-small">02.08.2019</span>
+						</p>
+					</div>
+					<p class="da-reviews__text">
+						Обратилась в банк для размещения средств по вкладам в Lister банк и была приятно удивлена. Менеджер для того чтобы я получила желаемый банковский продукт, сделал то, 
+						что не входит в его прямые обязанности. Менеджер проконсультировал и помог с документами, связался с другим банком его вежливость натолкнула меня на создание отзыва. 
+					</p>
+				</div>
+				<!-- /item1 -->
+				<!-- item2 -->
+				<div class="da-reviews__item">
+					<div class="da-reviews__user">
+						<img class="da-reviews__img" src="images/reviews/reviews-2.jpg" alt="reviews-2.jpg">
+						<p class="da-reviews__subtitle">
+							Александр Туменко
+							<span class="da-reviews__subtitle-small">13.08.2019</span>
+						</p>
+					</div>
+					<p class="da-reviews__text">
+						Сотрудничаю с банком с 2018 года, и хочу заметить, что данный банк — один из самых солидных у нас. Уважают и себя, и партнеров. Подходят индивидуально, говорю исходя из опыта, а не по слухам. Сбор документов занял всего несколько дней, проблем не возникло и кредит мне одобрили. Причем следуя всем рекомендациям, получил его на очень выгодных условиях, спасибо.
+					</p>
+				</div>
+				<!-- /item2 -->
+				<!-- item3 -->
+				<div class="da-reviews__item">
+					<div class="da-reviews__user">
+						<img class="da-reviews__img" src="images/reviews/reviews-3.jpg" alt="reviews-3.jpg">
+						<p class="da-reviews__subtitle">
+							Алексей Кононов
+							<span class="da-reviews__subtitle-small">26.08.2019</span>
+						</p>
+					</div>
+					<p class="da-reviews__text">
+						Как человек, подходящий к любому делу со всей ответственностью, довольно длительное время выбирал банк, куда обратиться. Изучала отзывы, внимательно рассматривала предлагаемые услуги и их условия, так как ранее были прецеденты в другом банке со скрытыми комиссиями и навязанными страховками, которые в итоге намного увеличивали процентную ставку.
+					</p>
+				</div>
+				<!-- /item3 -->
+				<!-- item4 -->
+				<div class="da-reviews__item">
+					<div class="da-reviews__user">
+						<img class="da-reviews__img" src="images/reviews/reviews-4.jpg" alt="reviews-4.jpg">
+						<p class="da-reviews__subtitle">
+							Галина Казакова
+							<span class="da-reviews__subtitle-small">22.08.2019</span>
+						</p>
+					</div>
+					<p class="da-reviews__text">
+						Уже полтора года как пользуюсь дебетовой картой МТС-банка. За обслуживание пластика платить ничего не надо, а на карту, напротив, идут какие-то деньги, пусть относительно нашей инфляции и небольшие. За все покупки — от 1 до 5 процентов кэшбек, а на товары для сада-ремонта было вообще 9. Плюс накопительные проценты на остаток счета. 
+					</p>
+				</div>
+				<!-- /item4 -->
+				<!-- item5 -->
+				<div class="da-reviews__item">
+					<div class="da-reviews__user">
+						<img class="da-reviews__img" src="images/reviews/reviews-5.jpg" alt="reviews-5.jpg">
+						<p class="da-reviews__subtitle">
+							Дарья  Захаро
+							<span class="da-reviews__subtitle-small">15.08.2019</span>
+						</p>
+					</div>
+					<p class="da-reviews__text">
+						Брала тут кредит как клиент банка на покупку новой машины. Очень понравилось обслуживание и скорость выдачи кредита. Обычно у меня это затягивалось надолго, а тут прям супер быстро все получилось и я даже успел урвать мамшинку по нехилой скидке. Срок кредита тут хороший, меня прям порадовал. Не всегда же знаешь, как могут сложиться обстоятельства.
+					</p>
+				</div>
+				<!-- /item5 -->
+			</div>	
+		</div>
+		<!-- reviews__wrap -->
+	</div>
+</div>
+<!-- /reviews -->
+
+<!-- contacts -->
+<div class="container">
+	<div class="da-contacts" id="kontakty">
+		<h4 class="da-contacts__title">
+			Наши контакты и офис
+		</h4>
+		<div class="da-contacts__wrap">
+			<!-- item -->
+			<div class="da-contacts__item">
+				<div class="da-contacts__item-wrap">
+					<h5 class="da-contacts__subtitle">
+						Мы рады вам помочь
+						и ответить на любой <br>
+						Ваш вопрос
+					</h5>
+					<p class="da-contacts__text-small">
+						Телефон:
+					</p>
+					<h5 class="da-contacts__text da-contacts__text-1">
+						+7 (999) 777-88-99
+					</h5>
+					<p class="da-contacts__text-small">
+						Адрес:
+					</p>
+					<p class="da-contacts__text da-contacts__text-2">
+						г. Москва, ул. Печатников переулок, 14 <br>
+						г. СПБ, ул. Дунайский проспект 84А
+					</p>
+					<p class="da-contacts__text-small">
+						E-mail:
+					</p>
+					<h5 class="da-contacts__text da-contacts__text-3">
+						ListenBank@mail.ru
+					</h5>
+				</div>
+			</div>
+			<!-- /item -->
+			<!-- map -->
+			<div class="da-contacts__map">
+				<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A28f1649696722bac0661e9cb2fcb50f63e52275275a38710cd6eb925aa7bd2fb&amp;width=550&amp;height=480&amp;lang=ru_UA&amp;scroll=true"></script> -->
+
+				<img src="images/contacts/contacts_map.jpg" alt="contacts_map.jpg">
+			</div>
+			<!-- /map -->
+		</div>
+	</div>
+</div>
+<!-- /contacts -->
+
+<footer class="da-footer">
+	<div class="container">
+		<p class="da-footer__title">
+			Copyright 2019 © 2013–2019, АО КБ «Listen bank» | Официальный сайт «Listen bank»
+		</p>
+	</div>
+</footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="js/slick.min.js"></script>
+<script src="js/maskedinput.js"></script>
+<script src="js/script.js"></script>
+
+<!-- Вход в личный кабинет -->
+<div id="modalKabinet" class="da-modal da-modal-kabinet">
+		<h4 class="da-modal__title">
+			Личный кабинет
+		</h4>
+		<p class="da-modal__text-small">
+			Только зарегистрированные 
+			пользователи
+		</p>
+		<form action="lichnyy-kabinet.html">
+			<input type="text" name="login" class="da-modal__input"  placeholder="Логин" required>
+			<input type="password" name="password" class="da-modal__input"  placeholder="Пароль" required>
+			<button type="submit" class="da-btn da-modal__btn">Оставить заявку</button>
+		</form>
+		<a class="da-modal__link" href="#">
+			Забыли пароль?
+		</a>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вход в личный кабинет -->
+
+<!-- Консультация -->
+<div id="modalKonsultatsiya" class="da-modal da-modal-konsultatsiya">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKonsultatsiya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-4"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-4"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-4 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-4"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Консультация">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-4">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Консультация -->
+
+<!-- Кредиты -->
+<!-- Кредит «Премьер» -->
+<div id="modalKreditPremyer" class="da-modal da-modal-kredity">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formlKreditPremyer">
+			<input type="text" name="name" class="da-modal__input da-modal__input-1"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-1"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-1 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-1"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредит Премьер">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-1">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредит «Премьер» -->
+
+<!-- Кредит «Пора действовать» -->
+<div id="modalKreditPoraDeystvovat" class="da-modal da-modal-kredity">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKreditPoraDeystvovat">
+			<input type="text" name="name" class="da-modal__input da-modal__input-2"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-2"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-2 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-2"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредит Пора действовать">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-2">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредит «Пора действовать» -->
+
+<!-- Кредит «Семейный» -->
+<div id="modalKreditSemeyny" class="da-modal da-modal-kredity">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKreditSemeyny">
+			<input type="text" name="name" class="da-modal__input da-modal__input-3"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-3"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-3 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-3"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредит Семейный">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-3">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредит «Семейный» -->
+<!-- /Кредиты -->
+
+<!-- Вклады -->
+<!-- Вклад «Максимальный доход 7.8%» -->
+<div id="modalVkladMaksimalnyDokhod" class="da-modal da-modal-vklady">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formVkladMaksimalnyDokhod">
+			<input type="text" name="name" class="da-modal__input da-modal__input-1"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-1"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-1 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-1"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Вклад Максимальный доход 7.8%">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-1">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вклад «Максимальный доход 7.8%» -->
+
+<!-- Вклад «Инвестиционный»  -->
+<div id="modalVkladInvestitsionny" class="da-modal da-modal-vklady">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formVkladInvestitsionny">
+			<input type="text" name="name" class="da-modal__input da-modal__input-2"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-2"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-2 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-2"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Вклад Инвестиционный">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-2">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вклад «Инвестиционный»  -->
+
+<!-- Вклад «Капитальный» -->
+<div id="modalVkladKapitalny" class="da-modal da-modal-vklady">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formVkladKapitalny">
+			<input type="text" name="name" class="da-modal__input da-modal__input-3"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-3"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-3 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-3"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Вклад Капитальный">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-3">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Вклад «Капитальный» -->
+<!-- /Вклады -->
+
+
+<!-- Банковские карты -->
+<!-- Капитальная карта -->
+<div id="modalKartaKapitalnaya" class="da-modal da-modal-kreditnyye-karty">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKartaKapitalnaya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-2"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-2"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-2 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-2"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Капитальная карта">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-2">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Капитальная карта -->
+
+<!-- Кредитная карта  -->
+<div id="modalKartaKreditnaya" class="da-modal da-modal-kreditnyye-karty">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKartaKreditnaya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-3"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-3"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-3 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-3"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Кредитная карта">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-3">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Кредитная карта  -->
+
+<!-- Пенсионная карта -->
+<div id="modalKartaPensionnaya" class="da-modal da-modal-kreditnyye-karty">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formKartaPensionnaya">
+			<input type="text" name="name" class="da-modal__input da-modal__input-1"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-1"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-1 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-1"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Пенсионная карта">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-1">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Пенсионная карта -->
+<!-- /Банковские карты -->
+
+<!-- Страхование «Оптима» -->
+<div id="modalStrakhovaniye" class="da-modal da-modal-strakhovaniye">
+		<h4 class="da-modal__title">
+			Обратная связь
+		</h4>
+		<p class="da-modal__text-small">
+			Оставьте Ваши контактные данные 
+			и мы свяжемся с Вами
+		</p>
+		<form id="formStrakhovaniye">
+			<input type="text" name="name" class="da-modal__input da-modal__input-4"  placeholder="ФИО" required>
+			<input type="text" name="date" class="da-modal__input da-modal__input-4"  placeholder="Дата рождения" required>
+			<input type="tel" name="phone" class="da-modal__input da-modal__input-4 maskedinput" placeholder="Номер телефона" required>	
+			<input type="email" name="email" class="da-modal__input da-modal__input-4"  placeholder="E-mail" required>
+			<input type="hidden" name="hidden" value="Страхование Оптима">
+			<button type="submit" class="da-btn da-modal__btn da-modal__btn-4">Оставить заявку</button>
+		</form>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<!-- /Страхование «Оптима» -->
+
+<!-- Спасибо -->
+<div id="thanks" class="da-modal da-modal__thanks">
+	<h3 class="da-modal__title">Спасибо за заявку!</h3>
+	<p class="da-modal__text-thanks">
+		Мы перезвоним Вам в течение 30 минут
+	</p>
+	<a class="modal-close" title="Закрыть"></a>
+</div>
+<div class="overlay"></div>
+<!-- /Спасибо -->
+
+</body>
+</html>
